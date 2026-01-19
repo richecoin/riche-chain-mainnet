@@ -9,7 +9,7 @@ This repository contains the configuration files required to run a node and conn
 | Parameter | Value | Description |
 | :---- | :---- | :---- |
 | **Network Name** | Riche Chain Mainnet |  |
-| **Chain ID** | 132026 | Hex: 0x203da |
+| **Chain ID** | 132026 | Hex: 0x203ba |
 | **Currency Symbol** | **RIC** | Native Coin |
 | **Consensus** | QBFT | Instant Finality (No reorganization) |
 | **Block Time** | 3 Seconds | Fast confirmation |
