@@ -30,7 +30,7 @@ This repository contains the configuration files required to run a node and conn
 ### **Prerequisites**
 
 * **Hardware:** 4 vCPU, 8GB RAM, 100GB+ SSD.  
-* **Software:** Docker & Docker Compose **OR** Java JDK 17+ (for binary).
+* **Software:** Docker & Docker Compose **OR** Java JDK 21 (for binary).
 
 ## **🦊 Metamask Integration**
 
