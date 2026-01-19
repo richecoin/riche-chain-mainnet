@@ -4,38 +4,38 @@
 # ==========================================================
 
 # Data Directory
-# Lokasi penyimpanan database blockchain
+# Blockchain database storage location
 data-path="/var/lib/besu"
 
 # Genesis File
-# Menunjuk ke file genesis.json
+# Points to the genesis.json file
 genesis-file="genesis.json"
 
 # Network Configuration
-# 132026 sesuai dengan Chain ID Riche Chain
+# 132026 corresponds to the Riche Chain Chain ID
 network-id=132026
 
 # P2P Configuration
-# Port standar P2P Besu
+# Default Besu P2P port
 p2p-port=30303
 p2p-enabled=true
 
 # Discovery
-# Aktifkan discovery agar node bisa menemukan peer lain
+# Enable discovery so the node can find other peers
 discovery-enabled=true
 
 # Bootnodes
-# PENTING: Masukkan Enode URL dari server seed utama Mas di sini.
+# IMPORTANT: Insert the Enode URL from the main seed server here.
 # Format: "enode://<pubkey>@<ip_address>:30303"
-# Exchange butuh ini untuk connect pertama kali.
+# Exchanges require this for the initial connection.
 bootnodes=["enode://<ENTER_ENODE_PUBKEY_DARI_SERVER_UTAMA>@<IP_SERVER_SEED>:30303"]
 
 # JSON-RPC Configuration (HTTP)
-# Diaktifkan untuk interaksi transaksi (Metamask/Web3)
+# Enabled for transaction interaction (Metamask/Web3)
 rpc-http-enabled=true
 rpc-http-host="0.0.0.0"
 rpc-http-port=8545
-# API yang dibuka. Untuk publik biasanya: ETH, NET, WEB3. ADMIN/TXPOOL hati-hati membukanya ke publik.
+# Enabled APIs. For public access usually: ETH, NET, WEB3. Be cautious exposing ADMIN/TXPOOL publicly.
 rpc-http-api=["ETH", "NET", "WEB3", "QBFT"]
 rpc-http-cors-origins=["*"]
 
@@ -45,7 +45,7 @@ rpc-ws-host="0.0.0.0"
 rpc-ws-port=8546
 rpc-ws-api=["ETH", "NET", "WEB3", "QBFT"]
 
-# Metrics (Opsional - untuk monitoring server)
+# Metrics (Optional - for server monitoring)
 metrics-enabled=false
 # metrics-host="0.0.0.0"
 # metrics-port=9545
@@ -54,5 +54,5 @@ metrics-enabled=false
 logging="INFO"
 
 # Transaction Pool
-# Menjaga node tetap ringan, sesuaikan dengan kapasitas server
+# Keeps the node lightweight, adjust based on server capacity
 tx-pool-retention-hours=24
