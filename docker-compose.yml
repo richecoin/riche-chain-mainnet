@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  besu-node:
+    image: hyperledger/besu:latest
+    container_name: riche-chain-node
+    restart: always
+    ports:
+      - "8545:8545"   # HTTP RPC
+      - "8546:8546"   # WebSocket
+      - "30303:30303" # P2P TCP
+      - "30303:30303/udp" # P2P UDP
+    volumes:
+      - ./data:/var/lib/besu
+      - ./genesis.json:/config/genesis.json
+      - ./config.toml:/config/config.toml
+    command: [
+      "--config-file=/config/config.toml",
+      "--genesis-file=/config/genesis.json"
+    ]
+    ulimits:
+      nofile:
+        soft: 65536
+        hard: 65536
