@@ -32,24 +32,6 @@ This repository contains the configuration files required to run a node and conn
 * **Hardware:** 4 vCPU, 8GB RAM, 100GB+ SSD.  
 * **Software:** Docker & Docker Compose **OR** Java JDK 17+ (for binary).
 
-### **Option A: Using Docker (Recommended)**
-
-1. **Clone the Repository:**  
-   git clone [https://github.com/richecoin/riche-chain-mainnet](https://github.com/richecoin/riche-chain-mainnet)  
-   cd riche-chain-mainnet
-
-2. **Start the Node:**  
-   docker-compose up \-d
-
-3. **Check Logs:**  
-   docker logs \-f riche-chain-node
-
-### **Option B: Using Besu Binary**
-
-1. Ensure you have Hyperledger Besu installed.  
-2. Run the node pointing to the config file:  
-   besu \--config-file=config.toml
-
 ## **🦊 Metamask Integration**
 
 Developers and users can connect to Riche Chain using the following settings in Metamask:
