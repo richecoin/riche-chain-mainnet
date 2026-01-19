@@ -35,8 +35,8 @@ This repository contains the configuration files required to run a node and conn
 ### **Option A: Using Docker (Recommended)**
 
 1. **Clone the Repository:**  
-   git clone \[https://github.com/richechain/mainnet.git\](https://github.com/richechain/mainnet.git)  
-   cd mainnet
+   git clone \[https://github.com/richecoin/riche-chain-mainnet](https://github.com/richecoin/riche-chain-mainnet)  
+   cd riche-chain-mainnet
 
 2. **Start the Node:**  
    docker-compose up \-d
