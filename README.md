@@ -53,4 +53,4 @@ We welcome contributions from the community. If you find a bug or want to propos
 * **Telegram:** [t.me/richechain](https://t.me/richechain)  
 * **GitHub:** [github.com/richechain](https://www.google.com/search?q=https://github.com/richechain)
 
-*© 2025 Riche Chain Foundation. All rights reserved.*
+*© 2026 Riche Chain Foundation. All rights reserved.*
